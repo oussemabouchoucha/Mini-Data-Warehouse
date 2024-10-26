@@ -58,3 +58,35 @@ Before getting started, ensure you have the following installed:
 
 ## Project Structure
 Your project directory should look like this:
+```plaintext
+my_spark_project/
+├── data/
+│   ├── raw/
+│   │   └── sales.csv
+│   │   └── customers.csv
+├── notebooks/
+│   └── etl.ipynb
+├── scripts/
+│   └── etl.py
+├── output/
+│   ├── bronze/
+│   ├── silver/
+│   └── gold/
+├── README.md
+├── requirements.txt
+└── .gitignore
+```
+
+### .gitignore
+This file should include patterns to ignore temporary or large files:
+
+
+### requirements.txt
+This file contains the Python dependencies for your project, including PySpark:
+
+## Getting Started
+To start working on this project:
+1. Clone this repository to your local machine.
+2. Install the required Python packages listed in `requirements.txt`:
+   ```bash
+   pip install -r requirements.txt
